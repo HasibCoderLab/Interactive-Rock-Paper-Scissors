@@ -9,5 +9,10 @@
 
 }
 .chioces img{
-height: 250px;
+/* height: 250px; */
+width: 100px;
+border-radius: 50%;
+cursor: pointer;
+/* color: red; */
+/* background: transparent; */
 }
