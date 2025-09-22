@@ -1,0 +1,13 @@
+.mid{
+    text-align: center;
+}
+.chioces{
+   display: flex; 
+   gap: 25px;
+   justify-content: center;
+      /* align-items: center; */
+
+}
+.chioces img{
+height: 250px;
+}
