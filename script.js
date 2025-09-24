@@ -8,23 +8,25 @@
 //        counter++
 //     })
 // })
-let userScore = 0;
-let comScore = 0;
 
+let userScore = 0;
+let compStore = 0;
 const playGame = (userChoice) => {
-console.log(`User Choice is ${userChoice}`);
+    console.log(`user Choice is ${userChoice}`);
 
 }
 
 const choice = document.querySelectorAll(".choice");
-choice.forEach((choice) => {
 // console.log(choice);
-choice.addEventListener("click" , () =>{
-    const userChoice = choice.getAttribute("id");
-    // console.log("Hurrah ! Clicked" , userChoice);
-    playGame(userChoice);
-    
-});
+choice.forEach((choice) => {
+    choice.addEventListener("click", () => {
+        console.log("click");
+        const userChoice = choice.getAttribute("id")
+        // console.log("Your choice is ", userChoice);
+
+        playGame(userChoice);
+
+    });
 });
 
 
