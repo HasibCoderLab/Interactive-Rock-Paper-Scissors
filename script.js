@@ -12,6 +12,7 @@
 let userScore = 0;
 let compStore = 0;
 const choice = document.querySelectorAll(".choice");
+const msg = document.getElementById("msg");
 // console.log(choice);
 
 // ===============| Coumputer Choice |================
@@ -23,6 +24,19 @@ const genCompChoice = () => {
 }
 const drawGame = () => {
     console.log("Game is Draw");
+    msg.innerText = "Game Was Deaw";
+
+};
+const showWinner = (userWin) => {
+    if (userWin) {
+        console.log("You Win");
+        msg.innerText = "Win";
+
+    } else {
+        console.log("You Loos");
+        msg.innerText = "Loos";
+
+    }
 
 }
 // ===============| User Choice |================
