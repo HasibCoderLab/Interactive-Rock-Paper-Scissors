@@ -14,24 +14,28 @@ let compStore = 0;
 const choice = document.querySelectorAll(".choice");
 // console.log(choice);
 
+// ===============| Coumputer Choice |================
 const genCompChoice = () => {
     const Items = ["rock", "paper", "scissors"];
     const randomIdx = Math.floor(Math.random() * 3)
+    // console.log(randomIdx);  
     return Items[randomIdx];
 }
 
+// ===============| User Choice |================
 const playGame = (userChoice) => {
     console.log(`user Choice is ${userChoice}`);
     const compChoice = genCompChoice();
     console.log(`comp Choice is ${compChoice}`);
 
 }
+
+// ===============| Event  Handler |================
 choice.forEach((choice) => {
     choice.addEventListener("click", () => {
         // console.log("click");
         const userChoice = choice.getAttribute("id")
         // console.log("Your choice is ", userChoice);
-
         playGame(userChoice);
 
     });
