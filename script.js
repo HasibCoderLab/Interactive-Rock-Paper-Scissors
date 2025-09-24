@@ -21,14 +21,40 @@ const genCompChoice = () => {
     // console.log(randomIdx);  
     return Items[randomIdx];
 }
+const drawGame = () => {
+    console.log("Game is Draw");
 
+}
 // ===============| User Choice |================
 const playGame = (userChoice) => {
     console.log(`user Choice is ${userChoice}`);
     const compChoice = genCompChoice();
     console.log(`comp Choice is ${compChoice}`);
+    if (userChoice === compChoice) {
+        drawGame()
+    }
+    // ==========| Condition  |==========
+    else {
+        let userWin = true;
+
+
+        if (userChoice === "rock") {
+            // scissors , paper
+            userWin = compChoice === "paper" ? false : true;
+        }
+        else if (userChoice === "paper") {
+            // rock  scissors
+            userWin = compChoice === "scissors" ? false : true;
+        } else {
+            userWin = compChoice === "rock" ? false : true;
+
+        }
+        showWinner(userWin);
+    }
 
 }
+
+
 
 // ===============| Event  Handler |================
 choice.forEach((choice) => {
@@ -37,6 +63,7 @@ choice.forEach((choice) => {
         const userChoice = choice.getAttribute("id")
         // console.log("Your choice is ", userChoice);
         playGame(userChoice);
+
 
     });
 });
