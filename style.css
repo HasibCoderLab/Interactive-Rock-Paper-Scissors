@@ -11,7 +11,7 @@ h1 {
     line-height: 60px;
 }
 
-.chioces {
+.choices {
     display: flex;
     gap: 25px;
     justify-content: center;
@@ -20,7 +20,7 @@ h1 {
 
 }
 
-.chioce {
+.choice {
     height: 165px;
     width: 165px;
     border-radius: 50%;
@@ -30,7 +30,7 @@ h1 {
 
 }
 
-.chioce:hover {
+.choice:hover {
     background-color: black;
     /* opacity: 0.5; */
     cursor: pointer;
@@ -70,4 +70,7 @@ img {
     display: inline;
     padding: 16px;
     border-radius: 16px;
+}
+#head{
+    margin-top: 20px;
 }
