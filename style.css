@@ -9,21 +9,36 @@ h1{
     height: 60px;
     line-height: 60px;
 }
-.mid{
-    text-align: center;
-}
+
 .chioces{
    display: flex; 
    gap: 25px;
    justify-content: center;
-      /* align-items: center; */
+      align-items: center;
+      margin-top: 80px;
 
 }
-.chioces img{
-/* height: 250px; */
-width: 100px;
+.chioce{
+    height: 165px;
+    width: 165px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.chioce:hover{
+    background-color: rgb(255, 0, 0);
+    /* opacity: 0.5; */
+    cursor: pointer;
+}
+img{
+height: 150px;
+width: 150px;
+object-fit: cover;
 border-radius: 50%;
-cursor: pointer;
+/* cursor: pointer; */
+
 /* color: red; */
 /* background: transparent; */
 }
